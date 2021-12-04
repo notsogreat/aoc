@@ -1,7 +1,7 @@
 package main
 
 import (
-	"aoc2021/pkg/SonarSweep"
+	"aoc/aoc2021/SonarSweep"
 	"bufio"
 	"fmt"
 	"log"
@@ -12,7 +12,7 @@ import (
 func main() {
 	input := []int{}
 
-	f, err := os.Open("input.txt")
+	f, err := os.Open("aoc2021/SonarSweep/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -29,7 +29,6 @@ func main() {
 	if err := scanner.Err(); err != nil {
 		log.Fatal(err)
 	}
-
 	_, d := SonarSweep.CalculateDepthMeasureSlidingWindow(input)
 	fmt.Println(d)
 }
