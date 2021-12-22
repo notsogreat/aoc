@@ -1,13 +1,11 @@
 package main
 
 import (
-	dive "aoc/aoc2021/Dive"
+	giantsquid "aoc/aoc2021/giantSquid"
 	"aoc/helper"
-	"fmt"
 )
 
 func main() {
-	scanner := helper.ReadFile("aoc2021/Dive/input.txt")
-	input := dive.ConverInputIntoDataStruct(scanner)
-	fmt.Println(dive.CorrectSubmarineDepth(input))
+	scanner := helper.ReadFile("aoc2021/giantSquid/input.txt")
+	giantsquid.ReadInput(scanner)
 }
